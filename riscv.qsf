@@ -42,10 +42,25 @@ set_global_assignment -name TOP_LEVEL_ENTITY riscv_top_level
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:25:41  AUGUST 18, 2026"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
-set_global_assignment -name BDF_FILE Register_File.bdf
-set_global_assignment -name BDF_FILE GP_Register_1bit.bdf
-set_global_assignment -name BDF_FILE GP_Register.bdf
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name BDF_FILE "cpu parts/OpDecoder.bdf"
+set_global_assignment -name BDF_FILE "cpu parts/ControlUnit.bdf"
+set_global_assignment -name BDF_FILE "cpu parts/alu.bdf"
+set_global_assignment -name BDF_FILE components/half_adder.bdf
+set_global_assignment -name BDF_FILE components/full_adder_32_bit.bdf
+set_global_assignment -name BDF_FILE components/full_adder_8_bit.bdf
+set_global_assignment -name BDF_FILE components/full_adder_1_bit.bdf
+set_global_assignment -name BDF_FILE components/decoder_4_bit.bdf
+set_global_assignment -name BDF_FILE Register_File.bdf
+set_global_assignment -name BDF_FILE GP_Register_1bit.bdf
+set_global_assignment -name BDF_FILE GP_Register.bdf
 set_global_assignment -name BDF_FILE riscv_top_level.bdf
+set_global_assignment -name BDF_FILE riscv_core.bdf
+set_global_assignment -name BDF_FILE components/ext12_32.bdf
+set_global_assignment -name BDF_FILE components/ext20_32.bdf
+set_global_assignment -name BDF_FILE components/mux8_32.bdf
+set_global_assignment -name BDF_FILE components/ext1_32.bdf
+set_global_assignment -name BDF_FILE "cpu parts/aluOpCode.bdf"
+set_global_assignment -name BDF_FILE components/decoder_3_bit.bdf
